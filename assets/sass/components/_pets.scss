@@ -1,0 +1,45 @@
+.pets {
+    padding: 8rem 0 10rem;
+    background-color: $color-light-l;
+}
+
+.pets__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6rem;
+    align-items: center;
+}
+
+.pets__heading {
+    text-align: center;
+}
+
+.pets__slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5.3rem;
+}
+
+.pets__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 9rem;
+}
+
+.card {
+    padding: 0 0 3rem;
+    width: 27rem;
+    height: 43.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: center;
+    background-color: $color-ligth-s;
+    border-radius: 0.9rem;
+    &:hover {
+        box-shadow: 0px 0.2rem 3.5rem 1.4rem rgb(13 13 13 / 4%);
+    }
+}

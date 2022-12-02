@@ -1,0 +1,35 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    position: relative;
+    @include font($size: 1.5rem, $height: 2.4rem, $space: 0.04rem, $weight: 400);
+    @extend %font-prim;
+    color: $color-dark-l;
+}
+
+h1 {
+    @extend %font-add;
+    @include font($size: 3.2rem, $height: 3.5rem, $space: 0.06em, $weight: 400); 
+}
+
+h2 {
+    @include font($size: 4.4rem, $height: 5.7rem, $space: -0.0006em, $weight: 400);
+    @extend %font-add; 
+}
+
+h3 {
+    @include font($size: 3.5rem, $height: 4.5rem, $space: 0.06em, $weight: 400);
+    @extend %font-add;
+}
+
+h4 {
+    @include font($size: 2rem, $height: 2.3rem, $space: 0.06em, $weight: 400);
+    @extend %font-add;
+}
+
+h5 {
+    @include font($size: 1.5rem, $height: 1.6rem, $space: 0.06em, $weight: 400);
+    @extend %font-add;
+}

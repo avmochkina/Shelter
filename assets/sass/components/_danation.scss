@@ -1,0 +1,42 @@
+.donation {
+    padding: 8rem 0 10rem 0;
+    background-color: $color-light-l;
+}
+.donation-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donation__image {
+    margin-right: 3rem;
+}
+
+.donation__content {
+    max-width: 38rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.donation__card {
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-primary;
+    border-radius: 0.9rem;
+}
+
+.card__icon {
+    margin-right: 1.5rem;
+    height: 2.3rem;
+}
+
+.donation__info {
+    @include font($size: 1.2rem, $height: 1.8rem, $space: 0.06em, $weight: 400);
+    font-style: italic;
+    color: $color-dark-m;
+}

@@ -1,0 +1,23 @@
+.about {
+    padding: 8rem 0 10rem 0;
+}
+
+.about__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about__content {
+    width: 43rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.about__image {
+    margin-right: 12rem;
+}

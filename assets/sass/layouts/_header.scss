@@ -1,0 +1,37 @@
+.header {
+    position: absolute;
+    top: 6rem;
+    width: 100%;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation {
+    width: 44.3rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.navigation-link {
+    @extend %font-prim;   
+    color: $color-dark-s;
+    letter-spacing: 0.017em;
+    text-decoration: none;
+    cursor: pointer;
+    @extend %transition;
+    &:hover {
+        color: $color-ligth-s;
+    }
+    &:active {
+        color: $color-ligth-s;
+        border-bottom: solid 0.2rem $color-primary;
+    }
+}

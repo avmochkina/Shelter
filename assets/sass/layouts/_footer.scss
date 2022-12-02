@@ -1,0 +1,47 @@
+.footer {
+    padding: 4rem 0 0;
+    background: $footer-gradient-background;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 16rem;
+}
+
+.footer__heading {
+    color: $color-light-xl;
+    width: 28.8rem;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact__icon {
+    width: 4rem;
+    height: 3.6rem;
+    margin-right: 2rem;
+}
+
+.footer__link {
+    color: $color-primary;
+}
+
+.location__icon {
+    margin-right: 2rem;
+}
+
+
+
+.footer__image {
+    height: 31rem;
+}

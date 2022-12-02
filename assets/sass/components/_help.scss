@@ -1,0 +1,33 @@
+.help {
+    padding: 8rem 0 10rem;
+}
+
+.help__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.help__heading {
+    text-align: center;
+}
+
+.help__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    height: 11.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-right: 12rem;
+    margin-bottom: 5.5rem;
+}
+
