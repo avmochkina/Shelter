@@ -9,9 +9,17 @@
     color: $color-primary;
 }
 
+.logo__title_black {
+    color: $color-dark-l;
+}
+
 .logo__subtitle {
     margin-top: 1rem;
     @include font($size: 1.3rem, $height: 1.5rem, $space: 0.096em, $weight: 400);
     text-align: center;
     color: $color-light-xl;
+}
+
+.logo__subtitle_black {
+    color: $color-dark-3xl;
 }

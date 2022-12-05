@@ -1,0 +1,51 @@
+.our-friends {
+    padding: 8rem 0 10rem;
+    background-color: $color-light-l;
+    @include media-mobile {
+        padding: 4.2rem 0;
+    }
+}
+
+.our-friends__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+    align-items: center;
+}
+
+.our-friends__heading {
+    text-align: center;
+}
+
+.our-friends__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    @include media-mobile {
+        height: 136.5rem;
+        overflow: hidden;
+    }
+}
+
+.card {
+    padding: 0 0 3rem;
+    width: 27rem;
+    height: 43.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: center;
+    background-color: $color-ligth-s;
+    border-radius: 0.9rem;
+    &:hover {
+        box-shadow: 0px 0.2rem 3.5rem 1.4rem rgb(13 13 13 / 4%);
+    }
+}
+
+.our-friends__navigation {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}

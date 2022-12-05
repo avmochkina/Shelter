@@ -46,3 +46,37 @@
         border:  0.2rem solid $color-primary-ligth;
     }
 }
+
+.navigation__button {
+    width: 5.2rem;
+    height: 5.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include font($size: 2rem, $height: 2.3rem, $space: 0.06em, $weight: 400);
+    font-family: Georgia, serif;
+    text-align: center;
+    color: $color-dark-3xl;
+    background-color: $color-light-l;
+    border: solid 0.2rem $color-primary;
+    border-radius: 10rem;
+    outline: none;
+    &:disabled {
+        color: $color-dark-s;
+        background-color: $color-light-l;
+        border: solid 0.2rem $color-dark-s;
+    }
+    &:hover {
+        background-color: $color-primary-ligth;
+        border: solid 0.2rem $color-primary-ligth;
+    }
+    &:active {
+        background-color: $color-primary;
+        border: solid 0.2rem $color-primary;
+    }
+}
+
+.navigation__page-number {
+    background-color: $color-primary;
+    border: 0;
+}
