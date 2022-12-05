@@ -11,7 +11,7 @@
 
 .logo__subtitle {
     margin-top: 1rem;
-    @include font($size: 1.3rem, $height: 0.1rem, $space: 0.096em, $weight: 400);
+    @include font($size: 1.3rem, $height: 1.5rem, $space: 0.096em, $weight: 400);
     text-align: center;
     color: $color-light-xl;
 }

@@ -1,5 +1,8 @@
 .help {
     padding: 8rem 0 10rem;
+    @include media-mobile {
+        padding: 4.2rem 0 4.2rem;
+    }
 }
 
 .help__wrapper {
@@ -7,6 +10,9 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 6rem;
+    @include media-mobile {
+        gap: 4.2rem;
+    }
 }
 
 .help__heading {
@@ -18,6 +24,14 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    @include media-tablet {
+        width: 63rem;
+        margin: 0 auto;
+    }
+    @include media-mobile {
+        width: 29rem;
+        gap: 3rem;
+    }
 }
 
 .item {
@@ -27,7 +41,29 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-right: 12rem;
-    margin-bottom: 5.5rem;
+    margin: 0 6rem 5.5rem;
+    @include media-tablet {
+        margin: 0 3rem 5.5rem;
+    }
+    @include media-mobile {
+        gap: 2rem;
+        margin: 0;
+        width: 13rem;
+        height: 8.7rem;
+    }
+    
 }
 
+.item__image {
+    @include media-mobile {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+.item__inner-image {
+    @include media-mobile {
+        width: 5rem;
+        height: 5rem;
+    }
+}

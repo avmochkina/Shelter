@@ -2,12 +2,38 @@
     position: absolute;
     top: 6rem;
     width: 100%;
+    @include media-tablet {
+        top: 3rem;
+    }
 }
 
 .header__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header__navigation {
+    @include media-mobile {
+        position: fixed;
+        top: -3rem;
+        right: -44rem;
+        background-color: #292929;
+        z-index: 20;
+        &:open {
+            right: 0;           
+        }
+    }
+}
+
+.header__navigation-logo {
+    display: none;
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    @include media-mobile {
+        display: flex;
+    }
 }
 
 .navigation {
@@ -18,6 +44,34 @@
     flex-direction: row;
     align-items: stretch;
     flex-wrap: wrap;
+    @include media-mobile {
+        padding-top: 24.8rem;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.header__navigation-link {
+    @include media-mobile {
+        margin-bottom: 4.3rem
+    }
+    &:hover {
+        @extend %transition;
+        color: $color-ligth-s;
+        border-bottom: solid 0.2rem $color-primary;
+    }
+    &:active {
+        @extend %transition;
+        border-bottom: solid 0.2rem $color-primary;
+        color: $color-ligth-s;
+    }
+}
+
+.header__navigation-link_active {
+    border-bottom: solid 0.2rem $color-primary;
+    color: $color-ligth-s;
 }
 
 .navigation-link {
@@ -27,11 +81,51 @@
     text-decoration: none;
     cursor: pointer;
     @extend %transition;
-    &:hover {
-        color: $color-ligth-s;
+    @include media-mobile {
+        @include font($size: 3.2rem, $height: 5.1rem, $space: 0.06em, $weight: 400);
     }
-    &:active {
-        color: $color-ligth-s;
-        border-bottom: solid 0.2rem $color-primary;
+}
+
+.header__burger {
+    display: none;
+    @include media-mobile {
+        display: flex;
+        position: relative;
+        width: 30px;
+        height: 22px; 
+        margin-right: 43px;
+        z-index: 20;  
+        &::before,
+        &::after {
+            content: '';
+            background-color: #F1CDB3;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+        }
+        &::before {
+            top: 0;
+        }
+        &::after {
+            bottom: 0;
+        }
+        &.open {
+            transform: rotate(90deg);
+            transition: 0.8s;
+            margin-left: 38px;
+            z-index: 25;
+        } 
+    }
+}
+
+@include media-mobile {
+    .burger-line {
+        background-color: #F1CDB3;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 10px; 
     }
 }

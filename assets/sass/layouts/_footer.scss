@@ -1,23 +1,38 @@
 .footer {
     padding: 4rem 0 0;
     background: $footer-gradient-background;
+    @include media-mobile {
+        padding: 3rem 0 0;
+    }
 }
 
 .footer-wrapper {
     display: flex;
     justify-content: space-between;
     gap: 16rem;
+    @include media-tablet {
+        justify-content: center;
+        gap: 6rem;
+        flex-wrap: wrap;
+    }
 }
 
 .footer__heading {
     color: $color-light-xl;
-    width: 28.8rem;
+    width: 29.8rem;
+    @include media-mobile {
+        text-align: center;
+    }
 }
 
 .footer__column {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    max-width: 30.2rem;
+    @include media-mobile {
+        align-items: center;
+    }
 }
 
 .contact {
@@ -40,8 +55,17 @@
     margin-right: 2rem;
 }
 
-
-
 .footer__image {
     height: 31rem;
+    @include media-mobile {
+        width: 26rem;
+        height: 27rem;
+    }
+}
+
+.footer__inner-image {
+    @include media-mobile {
+        width: 26rem;
+        height: 27rem;
+    }
 }

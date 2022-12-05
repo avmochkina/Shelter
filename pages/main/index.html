@@ -12,35 +12,44 @@
     <header class="header">
         <div class="wrapper">
             <div class="header__wrapper">
-                <div class="logo">
-                    <h1 class="logo__title">Cozy House</h1>
+                <a class="logo" href="#start">
+                    <h2 class="logo__title">Cozy House</h2>
                     <p class="logo__subtitle">Shelter for pets in Boston</p>
-                </div>
-                <nav class="header__navigation">
+                </a>
+                <nav id="menu" class="header__navigation">
+                    <div class="header__navigation-logo">
+                        <a href="#" class="">
+                            <h2 class="logo__title">Cozy House</h2>
+                            <p class="logo__subtitle">Shelter for pets in Boston</p>
+                        </a>
+                    </div>
                     <ul class="navigation">
-                        <li class="header__navigation-link">
-                            <a href="#" class="navigation-link active">About the shelter</a>
+                        <li class="header__navigation-link header__navigation-link_active">
+                            <a href="#about" class="navigation-link">About the shelter</a>
                         </li>
                         <li class="header__navigation-link">
-                            <a href="#" class="navigation-link">Our pets</a>
+                            <a href="#pets" class="navigation-link">Our pets</a>
                         </li>
                         <li class="header__navigation-link">
-                            <a href="#" class="navigation-link">Help the shelter</a>
+                            <a href="#help" class="navigation-link">Help the shelter</a>
                         </li>
                         <li class="header__navigation-link">
-                            <a href="#" class="navigation-link">Contacts</a>
+                            <a href="#contacts" class="navigation-link">Contacts</a>
                         </li>
                     </ul>
                 </nav>
+                <a href="#menu" class="header__burger">
+                    <span class="burger-line"></span>            
+                </a>
             </div>
         </div>
     </header>
     <main>
-        <section class="start-screen">
+        <section class="start-screen" id="start">
             <div class="wrapper">
                 <div class="start-screen__wrapper">
                     <div class="start-screen__content">
-                        <h2 class="start-screen__heading">Not only people </br>need a house</h2>
+                        <h1 class="start-screen__heading">Not only people </br>need a house</h1>
                         <p class="start-screen__subheading">We offer to give a chance to a little and nice puppy 
                             with an extremely wide and open heart. He or she will love you more than anybody else 
                             in the world, you will see!
@@ -52,12 +61,12 @@
                         </div>
                     </div>
                     <div class="start-screen__image">
-                        <img src="../../assets/images/start-screen-puppy.png" class="" alt="puppy">
+                        <img src="../../assets/images/start-screen-puppy.png" class="start-screen__inner-image" alt="puppy">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper">
                 <div class="about__wrapper">
                     <div class="about__content">
@@ -80,20 +89,22 @@
                         </p>
                     </div>
                     <div class="about__image">
-                        <img src="../../assets/images/about-pets.png"  class="" alt="cat and dog">
+                        <img src="../../assets/images/about-pets.png"  class="about__inner-image" alt="cat and dog">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="pets">
+        <section class="pets" id="pets">
             <div class="wrapper">
                 <div class="pets__wrapper">
                     <h3 class="pets__heading">Our friends who </br>are looking for a house
                     </h3>
                     <div class="pets__slider">
-                        <button class="arrow-slider arrow-slider_prev">
-                            <img src="../../assets/icons/Arrow.svg" alt="Left arrow">
-                        </button>
+                        <div class="arrow-slider_desktop">
+                            <button class="arrow-slider arrow-slider_prev">
+                                <img src="../../assets/icons/Arrow.svg" alt="Left arrow">
+                            </button>
+                        </div>
                         <div class="pets__cards">
                             <div class="card">
                                 <div class="card__image">
@@ -117,9 +128,19 @@
                                 <button class="button button-secondary">Learn more</button>
                             </div>
                         </div>
-                        <button class="arrow-slider arrow-slider_next">
-                            <img src="../../assets/icons/Arrow.svg" alt="Right arrow">
-                        </button>
+                        <div class="arrow-slider_desktop">
+                            <button class="arrow-slider arrow-slider_next">
+                                <img src="../../assets/icons/Arrow.svg" alt="Right arrow">
+                            </button>
+                        </div>
+                        <div class="arrow-slider_mobile">
+                            <button class="arrow-slider arrow-slider_prev">
+                                <img src="../../assets/icons/Arrow.svg" alt="Left arrow">
+                            </button>
+                            <button class="arrow-slider arrow-slider_next">
+                                <img src="../../assets/icons/Arrow.svg" alt="Right arrow">
+                            </button>
+                        </div>
                     </div>
                     <button class=" button button-primary">Get to know the rest</button>
                 </div>
@@ -131,55 +152,55 @@
                     <div class="help__items">
                         <div class="item">
                             <div class="item__image">
-                                <img src="../../assets/icons/pet food.svg" alt="pet food">
+                                <img src="../../assets/icons/pet food.svg" alt="pet food" class="item__inner-image">
                             </div>
                             <h4 class="item__description">Pet food</h4>
                         </div>
                         <div class="item">
                             <div class="item__image">
-                                <img src="../../assets/icons/transportation.svg" alt="transportation">
+                                <img src="../../assets/icons/transportation.svg" alt="transportation" class="item__inner-image">
                             </div>
                             <h4 class="item__description">Transportation</h4>
                         </div>
                         <div class="item">
                             <div class="item__image">
-                                <img src="../../assets/icons/toys.svg" alt="toys">
+                                <img src="../../assets/icons/toys.svg" alt="toys" class="item__inner-image">
                             </div>
                             <h4 class="item__description">Toys</h4>
                         </div>
                         <div class="item">
                             <div class="item__image">
-                                <img src="../../assets/icons/bowls-and-cups.svg" alt="bowls and cups">
+                                <img src="../../assets/icons/bowls-and-cups.svg" alt="bowls and cups" class="item__inner-image">
                             </div>
                             <h4 class="item__description">Bowls and cups</h4>
                         </div>
                         <div class="item">
                             <div class="item__image">
-                                <img src="../../assets/icons/shampoos.svg" alt="shampoos">
+                                <img src="../../assets/icons/shampoos.svg" alt="shampoos" class="item__inner-image">
                             </div>
                             <h4 class="item__description">Shampoos</h4>
                         </div>
                         <div class="item">
                             <div class="item__image">
-                                <img src="../../assets/icons/vitamins.svg" alt="vitamins">
+                                <img src="../../assets/icons/vitamins.svg" alt="vitamins" class="item__inner-image">
                             </div>
                             <h4 class="item__description">Vitamins</h4>
                         </div>
                         <div class="item">
                             <div class="item__image">
-                                <img src="../../assets/icons/medicines.svg" alt="medicines">
+                                <img src="../../assets/icons/medicines.svg" alt="medicines" class="item__inner-image">
                             </div>
                             <h4 class="item__description">Medicines</h4>
                         </div>
                         <div class="item">
                             <div class="item__image">
-                                <img src="../../assets/icons/collars-or-leashes.svg" alt="collars or leashes">
+                                <img src="../../assets/icons/collars-or-leashes.svg" alt="collars or leashes" class="item__inner-image">
                             </div>
                             <h4 class="item__description">Collars / leashes</h4>
                         </div>
                         <div class="item">
                             <div class="item__image">
-                                <img src="../../assets/icons/sleeping-area.svg" alt="sleeping areas">
+                                <img src="../../assets/icons/sleeping-area.svg" alt="sleeping areas" class="item__inner-image">
                             </div>
                             <h4 class="item__description">Sleeping areas</h4>
                         </div>
@@ -187,11 +208,11 @@
                 </div>
             </div>
         </section>
-        <section class="donation">
+        <section class="donation" id="help">
             <div class="wrapper">
                 <div class="donation-wrapper">
                     <div class="donation__image">
-                        <img src="../../assets/images/donation-dog.png" alt="dog">
+                        <img src="../../assets/images/donation-dog.png" alt="dog" class="donation__inner-image">
                     </div>
                     <div class="donation__content">
                         <h3 class="donation__heading">You can also </br>make a donation</h3>
@@ -212,7 +233,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">       
+    <footer class="footer" id="contacts">       
         <div class="wrapper">
             <div class="footer-wrapper">
                 <div class="footer__column footer__contact">
@@ -242,7 +263,7 @@
                         </div>
                         <h4 class="location__link">
                             <a class="footer__link" href="https://www.google.com/maps/place/1+Central+St,+Boston,+MA+02109,+%D0%A1%D0%A8%D0%90/@42.3585558,-71.056915,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370868bc2ce7b:0x82fa7db94f5fea9e!8m2!3d42.3585519!4d-71.0547263"
-                                target="_blanc">1 Central Street, Boston (entrance from the store)
+                                target="_blanc">1 Central Street, Boston </br>(entrance from the store)
                             </a>
                         </h4>
                     </div>
@@ -257,7 +278,7 @@
                     </div>
                 </div>
                 <div class="footer__image">
-                    <img src="../../assets/images/footer-puppy.png" alt="footer puppy">
+                    <img src="../../assets/images/footer-puppy.png" class="footer__inner-image" alt="footer puppy">
                 </div>
             </div>
         </div>

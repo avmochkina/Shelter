@@ -8,16 +8,44 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    @include media-tablet {
+        flex-direction: column;
+        gap: 8rem;
+    }
+    @include media-mobile {
+        gap: 4.2rem;
+    }
 }
 
 .about__content {
-    width: 43rem;
+    max-width: 43rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 2.5rem;
+    @include media-tablet {
+        min-width: 43rem;
+    }
+    @include media-mobile {
+        align-items: center;
+        min-width: 30rem;
+    }
 }
 
 .about__image {
     margin-right: 12rem;
+    @include media-tablet {
+        margin-right: 0;
+    }
+    @include media-mobile {
+        width: 26rem;
+        height: 35.3rem;
+    }
+}
+
+.about__inner-image {
+    @include media-mobile {
+        width: 26rem;
+        height: 35.3rem;
+    }
 }
