@@ -33,11 +33,12 @@
 }
 
 .pets__cards {
+    width: 99rem;
     display: flex;
     justify-content: space-between;
     gap: 9rem;
+    overflow: hidden;
     @include media-tablet {
-        overflow: hidden;
         width: 58rem;
         gap: 4rem;
     }

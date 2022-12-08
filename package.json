@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "style": "sass assets/sass/pets/style.scss pages/pets/style.css",
+    "style": "sass assets/sass/main/style.scss pages/main/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

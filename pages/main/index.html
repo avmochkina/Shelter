@@ -28,7 +28,7 @@
                             <a href="#about" class="navigation-link">About the shelter</a>
                         </li>
                         <li class="header__navigation-link">
-                            <a href="#pets" class="navigation-link">Our pets</a>
+                            <a href="../pets/index.html" class="navigation-link">Our pets</a>
                         </li>
                         <li class="header__navigation-link">
                             <a href="#help" class="navigation-link">Help the shelter</a>
@@ -94,7 +94,7 @@
                 </div>
             </div>
         </section>
-        <section class="pets" id="pets">
+        <section class="pets" id="">
             <div class="wrapper">
                 <div class="pets__wrapper">
                     <h3 class="pets__heading">Our friends who </br>are looking for a house
@@ -106,27 +106,8 @@
                             </button>
                         </div>
                         <div class="pets__cards">
-                            <div class="card">
-                                <div class="card__image">
-                                    <img src="../../assets/images/pets-katrine.png" alt="Katrine">
-                                </div>
-                                <h4 class="card__title">Katrine</h4>
-                                <button class="button button-secondary">Learn more</button>
-                            </div>
-                            <div class="card">
-                                <div class="card__image">
-                                    <img src="../../assets/images/pets-jennifer.png" alt="Jennifer">
-                                </div>
-                                <h4 class="card__title">Jennifer</h4>
-                                <button class="button button-secondary">Learn more</button>
-                            </div>
-                            <div class="card">
-                                <div class="card__image">
-                                    <img src="../../assets/images/pets-woody.png" alt="Woody">
-                                </div>
-                                <h4 class="card__title">Woody</h4>
-                                <button class="button button-secondary">Learn more</button>
-                            </div>
+                            
+                            
                         </div>
                         <div class="arrow-slider_desktop">
                             <button class="arrow-slider arrow-slider_next">
@@ -143,6 +124,23 @@
                         </div>
                     </div>
                     <button class=" button button-primary">Get to know the rest</button>
+                    <div class="pet__popup pet__popup_close">
+                        <div class="popup__image">
+                            <img src="" alt="">
+                        </div>
+                        <div class="popup__content">
+                            <h3 class="popup__title"></h3>      
+                            <h4 class="popup__type-breed"></h4>
+                            <h5 class="popup__description"></h5>
+                            <ul class="popup__info">
+                                <li><div class="popup__info-list"><h5 class="popup__info-item">Age: <h5 class="popup__age"></h5></h5></div></li>
+                                <li><div class="popup__info-list"><h5 class="popup__info-item">Inoculations: <h5 class="popup__inoculations"></h5></h5></div></li>
+                                <li><div class="popup__info-list"><h5 class="popup__info-item">Diseases: <h5 class="popup__diseases"></h5></h5></div></li>
+                                <li><div class="popup__info-list"><h5 class="popup__info-item">Parasites: <h5 class="popup__parasites"></h5></h5></div></li>
+                            </ul>
+                        </div>
+                        <div class="popup__button"> &times;</div>
+                    </div>
                 </div>
         </section>
         <section class="help">
@@ -284,5 +282,9 @@
         </div>
     </footer>
     <div class="overlay"></div>
+
+    
+    <script src="../../assets/js/renderCards.js"></script>
+    <script src="../../assets/js/renderPopUp.js"></script>
 </body>
 </html>

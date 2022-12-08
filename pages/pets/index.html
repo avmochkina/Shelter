@@ -12,7 +12,7 @@
     <header class="header">
         <div class="wrapper">
             <div class="header__wrapper">
-                <a class="logo" href="#start">
+                <a class="logo" href="../main/index.html">
                     <h2 class="logo__title_black">Cozy House</h2>
                     <p class="logo__subtitle_black">Shelter for pets in Boston</p>
                 </a>
@@ -49,65 +49,8 @@
             <div class="wrapper">
                 <div class="our-friends__wrapper">
                     <h3 class="our-friends__heading">Our friends who </br>are looking for a house</h3>
-                    <div class="our-friends__slider">
-                        <div class="our-friends__cards">
-                            <div class="card">
-                                <div class="card__image">
-                                    <img src="../../assets/images/pets-katrine.png" alt="Katrine">
-                                </div>
-                                <h4 class="card__title">Katrine</h4>
-                                <button class="button button-secondary">Learn more</button>
-                            </div>
-                            <div class="card">
-                                <div class="card__image">
-                                    <img src="../../assets/images/pets-jennifer.png" alt="Jennifer">
-                                </div>
-                                <h4 class="card__title">Jennifer</h4>
-                                <button class="button button-secondary">Learn more</button>
-                            </div>
-                            <div class="card">
-                                <div class="card__image">
-                                    <img src="../../assets/images/pets-woody.png" alt="Woody">
-                                </div>
-                                <h4 class="card__title">Woody</h4>
-                                <button class="button button-secondary">Learn more</button>
-                            </div>
-                            <div class="card">
-                                <div class="card__image">
-                                    <img src="../../assets/images/pets-sophia.png" alt="Sophia">
-                                </div>
-                                <h4 class="card__title">Sophia</h4>
-                                <button class="button button-secondary">Learn more</button>
-                            </div>
-                            <div class="card">
-                                <div class="card__image">
-                                    <img src="../../assets/images/pets-timmy.png" alt="Timmy">
-                                </div>
-                                <h4 class="card__title">Timmy</h4>
-                                <button class="button button-secondary">Learn more</button>
-                            </div>
-                            <div class="card">
-                                <div class="card__image">
-                                    <img src="../../assets/images/pets-charly.png" alt="Charly">
-                                </div>
-                                <h4 class="card__title">Charly</h4>
-                                <button class="button button-secondary">Learn more</button>
-                            </div>
-                            <div class="card">
-                                <div class="card__image">
-                                    <img src="../../assets/images/pets-scarlet.png" alt="Scarlett">
-                                </div>
-                                <h4 class="card__title">Scarlett</h4>
-                                <button class="button button-secondary">Learn more</button>
-                            </div>
-                            <div class="card">
-                                <div class="card__image">
-                                    <img src="../../assets/images/pets-freddie.png" alt="Freddie">
-                                </div>
-                                <h4 class="card__title">Freddie</h4>
-                                <button class="button button-secondary">Learn more</button>
-                            </div>
-                        </div>
+                    <div class="our-friends__slider">                        
+                        <div class="pets__cards"></div>
                     </div>
                     <div class="our-friends__navigation">
                         <button class="navigation__button navigation__first-page" disabled>
@@ -117,6 +60,23 @@
                         <input type="text" class="navigation__button navigation__page-number" value="1"></input>
                         <button class="navigation__button navigation__next-page">&gt;</button>
                         <button class="navigation__button navigation__last-page">&gt;&gt;</button>
+                    </div>
+                    <div class="pet__popup pet__popup_close">
+                        <div class="popup__image">
+                            <img src="" alt="">
+                        </div>
+                        <div class="popup__content">
+                            <h3 class="popup__title"></h3>      
+                            <h4 class="popup__type-breed"></h4>
+                            <h5 class="popup__description"></h5>
+                            <ul class="popup__info">
+                                <li><div class="popup__info-list"><h5 class="popup__info-item">Age: <h5 class="popup__age"></h5></h5></div></li>
+                                <li><div class="popup__info-list"><h5 class="popup__info-item">Inoculations: <h5 class="popup__inoculations"></h5></h5></div></li>
+                                <li><div class="popup__info-list"><h5 class="popup__info-item">Diseases: <h5 class="popup__diseases"></h5></h5></div></li>
+                                <li><div class="popup__info-list"><h5 class="popup__info-item">Parasites: <h5 class="popup__parasites"></h5></h5></div></li>
+                            </ul>
+                        </div>
+                        <div class="popup__button"> &times;</div>
                     </div>
                 </div>
         </section>
@@ -172,5 +132,7 @@
         </div>
     </footer>
     <div class="overlay"></div>
+    <script src="../../assets/js/renderCards.js"></script>
+    <script src="../../assets/js/renderPopUp.js"></script>
 </body>
 </html>
